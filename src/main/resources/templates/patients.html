@@ -59,7 +59,7 @@
                 <li th:each="page,status:${pages}">
                     <a th:class="${status.index==currentPage?'btn btn-primary ms-1':'btn btn-outline-primary ms-1'}" class="btn btn-outline-info ms-1"
                        th:text="${status.index}"
-                        th:href="@{/index/index(page=${status.index}, keyword=${keyword})}">
+                        th:href="@{/user/index(page=${status.index}, keyword=${keyword})}">
                     </a>
                 </li>
             </ul>

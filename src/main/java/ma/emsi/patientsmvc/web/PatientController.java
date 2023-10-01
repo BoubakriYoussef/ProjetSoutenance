@@ -42,8 +42,6 @@ public class PatientController {
         return "redirect:/index?page="+page+"&keyword="+keyword;
     }
 
-
-
     @GetMapping(path = "/")
     public String home(){
         return "redirect:/user/index";
